@@ -28,15 +28,5 @@
     "48": "images/logo48.png",
     "128": "images/logo128.png"
   },
-  "chrome_settings_overrides": {
-    "search_provider": {
-      "name": "Google Search with Language Range",
-      "keyword": "Google Search with Language Range",
-      "search_url": "http://www.google.com/search?lr=lang_zh-TW&q={searchTerms}&glr_id",
-      "favicon_url": "http://www.google.com/favicon.ico",
-      "encoding": "UTF-8",
-      "is_default": true
-    }
-  },
   "manifest_version": 2
 }

@@ -1,7 +1,3 @@
-// Copyright 2018 The Chromium Authors. All rights reserved.
-// Use of this source code is governed by a BSD-style license that can be
-// found in the LICENSE file.
-
 'use strict';
 
 const defaultLang = 'lang_zh-TW';
@@ -9,10 +5,12 @@ const lrParam = 'lr';
 let selectedLang = defaultLang;
 
 chrome.runtime.onInstalled.addListener(function () {
+  // set default lang
   chrome.storage.sync.set({ selected: defaultLang });
 });
 
 chrome.runtime.onMessage.addListener(function(request) {
+  // update lang from popup
   selectedLang = request.selected;
   chrome.storage.sync.set({ selected: selectedLang });
 });
@@ -27,7 +25,7 @@ if (navigator.doNotTrack !== 1) { // Let's not be evil, OK?
       redirectUrl: url.toString()
     };
   },
-    { urls: ['*://www.google.com/search?*glr_id'] },
+    { urls: ['*://www.google.com/search?*'] },
     ['blocking']
   );
 }
