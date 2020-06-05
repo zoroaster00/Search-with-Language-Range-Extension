@@ -6,7 +6,7 @@
     "storage",
     "webRequest",
     "webRequestBlocking",
-    "<all_urls>"
+    "*://www.google.com/search?*"
   ],
   "background": {
     "scripts": [
