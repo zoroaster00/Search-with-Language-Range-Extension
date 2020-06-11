@@ -19,7 +19,9 @@ if (navigator.doNotTrack !== 1) { // Let's not be evil, OK?
   chrome.webRequest.onBeforeRequest.addListener(function (details) {
     const url = new URL(details.url);
     url.searchParams.delete(lrParam);
-    url.searchParams.append(lrParam, selectedLang);
+    if (selectedLang !== 'ANY_LANG') {
+      url.searchParams.append(lrParam, selectedLang);
+    }
     // return a BlockingResponse object
     return {
       redirectUrl: url.toString()

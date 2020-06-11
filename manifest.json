@@ -1,7 +1,8 @@
 {
   "name": "Google\u2122 Search with Language Range",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Search in Google with lanaguage you choose.",
+  "default_locale": "en",
   "permissions": [
     "storage",
     "webRequest",

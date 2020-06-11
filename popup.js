@@ -9,7 +9,8 @@ const supportLangMap = {
   'lang_de': '\u0044\u0065\u0075\u0074\u0073\u0063\u0068',
   'lang_es': '\u0045\u0073\u0070\u0061\u00f1\u006f\u006c',
   'lang_ru': '\u0420\u0443\u0441\u0441\u043a\u0438\u0439',
-  'lang_ko': '\ud55c\uad6d\uc5b4'
+  'lang_ko': '\ud55c\uad6d\uc5b4',
+  'ANY_LANG': chrome.i18n.getMessage('any_lang')
 };
 let buttonContainer = document.getElementById('buttonContainer');
 
