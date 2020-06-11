@@ -1,5 +1,11 @@
 {
     "any_lang": {
         "message": "Any Language"
+    },
+    "ext_name": {
+        "message": "Google\u2122 Search with Language Range"
+    },
+    "ext_description": {
+        "message": "Search in Google with lanaguage you choose."
     }
 }

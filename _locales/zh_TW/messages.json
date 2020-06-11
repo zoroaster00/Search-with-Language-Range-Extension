@@ -1,5 +1,11 @@
 {
     "any_lang": {
         "message": "\u4efb\u4f55\u8a9e\u8a00"
+    },
+    "ext_name": {
+        "message": "Google\u2122\u641c\u5c0b\u8a9e\u8a00\u7bc4\u570d\u5e6b\u624b"
+    },
+    "ext_description": {
+        "message": "\u8a9e\u8a00\u7bc4\u570d\u8a2d\u5b9a\uff0c\u4e00\u9375\u641e\u5b9a\uff01"
     }
 }
