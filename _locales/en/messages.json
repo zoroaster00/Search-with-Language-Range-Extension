@@ -2,6 +2,9 @@
     "any_lang": {
         "message": "Any Language"
     },
+    "more_selection": {
+        "message": "More..."
+    },
     "ext_name": {
         "message": "Google\u2122 Search with Language Range"
     },
