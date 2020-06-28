@@ -15,6 +15,10 @@ chrome.runtime.onMessage.addListener(function(request) {
   chrome.storage.sync.set({ selected: selectedLang });
 });
 
+chrome.storage.sync.get('selected', function (data) {
+  selectedLang = data && data.selected;
+});
+
 if (navigator.doNotTrack !== 1) { // Let's not be evil, OK?
   chrome.webRequest.onBeforeRequest.addListener(function (details) {
     const url = new URL(details.url);
