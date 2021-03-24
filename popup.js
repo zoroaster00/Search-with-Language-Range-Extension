@@ -49,7 +49,7 @@ function populateLangButtons(buttonsContainer, langList) {
 
 function onClick(element) {
   let selectedLang = element.target.id;
-  chrome.runtime.sendMessage({ selected: selectedLang });
+  chrome.runtime.sendMessage({ selected: selectedLang, redirect: true });
   window.close();
 }
 

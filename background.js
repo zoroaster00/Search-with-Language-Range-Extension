@@ -1,6 +1,6 @@
 'use strict';
 
-const defaultLang = 'lang_zh-TW';
+const defaultLang = 'ANY_LANG';
 const lrParam = 'lr';
 let selectedLang = defaultLang;
 
@@ -13,6 +13,9 @@ chrome.runtime.onMessage.addListener(function(request) {
   // update lang from popup
   selectedLang = request.selected;
   chrome.storage.sync.set({ selected: selectedLang });
+  if (request.redirect) {
+    chrome.tabs.reload();
+  }
 });
 
 chrome.storage.sync.get('selected', function (data) {
